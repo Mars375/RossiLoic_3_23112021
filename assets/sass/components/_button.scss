@@ -5,6 +5,7 @@
     color: white;
     @include gradient-color;
     @include box-shadow();
+    
     &:hover{
         filter: brightness(110%);
         @include box-shadow(5px, 5px, 10px, grey);
