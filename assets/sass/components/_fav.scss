@@ -1,0 +1,26 @@
+.fa-heart {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 500ms;
+    overflow: hidden;
+}
+
+
+.far.fa-heart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: inherit;
+}
+
+.fa.fa-heart {
+    background: linear-gradient(to top right, #ED74DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(0);
+}
