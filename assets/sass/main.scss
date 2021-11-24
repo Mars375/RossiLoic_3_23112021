@@ -2,7 +2,7 @@
 
 @import "./base/typography", "./base/reset";
 @import "./utils/variables", "./utils/mixins";
-@import "./components/button";
+@import "./components/button", "./components/tag_new.scss";
 
 // Header
 
@@ -16,7 +16,7 @@
 
 // Localisation
 
-#localization{
+#localization {
     text-align: center;
     background-color: #EAEAEA;
     padding: 15px 0;
@@ -30,11 +30,11 @@
 
 // Navigation
 
-.navigation{
+.navigation {
     height: 270px;
     background-color: $background-color;
     text-align: center;
-    padding: 30px;
+    padding: 30px 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -43,7 +43,7 @@
 
 // Fonctionnement
 
-.process{
+.process {
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -63,7 +63,7 @@
         padding: 0 15px;
         align-self: center;
 
-        > li{
+        > li {
             height: 66px;
             display: flex;
             align-items: center;
@@ -97,4 +97,93 @@
             }
         }
     }
+}
+
+// Section restaurants
+
+#restaurants {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    padding: 30px 5%;
+}
+
+.container{
+    height: 90%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+        & a{
+        height: 23%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.restaurantTab{
+    position: relative;
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    @include box-shadow(0, 2px, 5px, lightgrey);
+    &__img{
+        height: 70%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+    &__text{
+        height: 30%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    &__name{
+        margin: 5px 0;
+    }
+    &__localization{
+        margin: 5px 0;
+    }
+    &__fav{
+        position: relative;
+        font-size: 25px;
+    }
+}
+
+.fa-heart {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 500ms;
+    overflow: hidden;
+}
+
+
+.far.fa-heart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: inherit;
+}
+
+.fa.fa-heart {
+    background: linear-gradient(to top right, #ED74DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(0);
 }

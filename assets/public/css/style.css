@@ -37,6 +37,12 @@ ol {
   counter-reset: li;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .button {
   width: 60%;
   padding: 15px 0;
@@ -48,6 +54,21 @@ ol {
 .button:hover {
   filter: brightness(110%);
   box-shadow: 5px 5px 10px grey;
+}
+
+.tag_new {
+  position: absolute;
+  right: 25px;
+  height: 30px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #078C6B;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px 0;
 }
 
 .mainTitle {
@@ -73,7 +94,7 @@ ol {
   height: 270px;
   background-color: #F6F6F6;
   text-align: center;
-  padding: 30px;
+  padding: 30px 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -128,6 +149,91 @@ ol {
 .process__list > li > i {
   margin-right: 5%;
   color: grey;
+}
+
+#restaurants {
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding: 30px 5%;
+}
+
+.container {
+  height: 90%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container a {
+  height: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurantTab {
+  position: relative;
+  height: 100%;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px lightgrey;
+}
+.restaurantTab__img {
+  height: 70%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.restaurantTab__text {
+  height: 30%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurantTab__name {
+  margin: 5px 0;
+}
+.restaurantTab__localization {
+  margin: 5px 0;
+}
+.restaurantTab__fav {
+  position: relative;
+  font-size: 25px;
+}
+
+.fa-heart {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 500ms;
+  overflow: hidden;
+}
+
+.far.fa-heart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: inherit;
+}
+
+.fa.fa-heart {
+  background: linear-gradient(to top right, #ED74DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(0);
 }
 
 /*# sourceMappingURL=style.css.map */

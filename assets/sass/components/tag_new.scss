@@ -1,0 +1,14 @@
+.tag_new{
+        position: absolute;
+        right: 25px;
+        height: 30px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiary-color;
+        color: #078C6B;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 20px 0;
+}
