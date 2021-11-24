@@ -32,6 +32,19 @@ a {
   color: black;
 }
 
+.button {
+  width: 60%;
+  padding: 15px 0;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  box-shadow: 1px 1px 5px grey;
+}
+.button:hover {
+  filter: brightness(110%);
+  box-shadow: 5px 5px 10px grey;
+}
+
 .mainTitle {
   height: 63px;
   padding: 20px 0px 10px 0px;
@@ -53,13 +66,14 @@ a {
 }
 
 .navigation {
-  height: 250px;
+  height: 270px;
   background-color: #F6F6F6;
   text-align: center;
-  padding: 40px 30px 50px 30px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

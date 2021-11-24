@@ -1,7 +1,7 @@
 // Import
 
-@import "./Base/typography", "./Base/reset";
-@import "./Utils/variables";
+@import "./base/typography", "./base/reset";
+@import "./utils/variables", "./utils/mixins";
 @import "./components/button";
 
 // Header
@@ -15,6 +15,8 @@
     align-items: center;
 }
 
+// Localisation
+
 #localization{
     text-align: center;
     background-color: #EAEAEA;
@@ -26,12 +28,15 @@
     }
 }
 
+// Navigation
+
 .navigation{
-    height: 250px;
+    height: 270px;
     background-color: #F6F6F6;
     text-align: center;
-    padding: 40px 30px 50px 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
