@@ -1,0 +1,37 @@
+// Import
+
+@import "./Base/typography", "./Base/reset";
+@import "./Utils/variables";
+@import "./components/button";
+
+// Header
+
+.mainTitle {    
+    height: 63px;
+    padding: 20px 0px 10px 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#localization{
+    text-align: center;
+    background-color: #EAEAEA;
+    padding: 15px 0;
+    font-weight: 700;
+    box-shadow: inset 0px 2px 5px 0px lightgrey;
+     > i {
+        margin-right: 15px;
+    }
+}
+
+.navigation{
+    height: 250px;
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 40px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
