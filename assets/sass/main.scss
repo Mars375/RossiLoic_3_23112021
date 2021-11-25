@@ -6,7 +6,7 @@
 
 // Header
 
-.mainTitle {    
+.mainTitle{    
     height: 63px;
     padding: 20px 0px 10px 0px;
     display: flex;
@@ -16,21 +16,21 @@
 
 // Localisation
 
-#localization {
+#localization{
     text-align: center;
     background-color: #EAEAEA;
     padding: 15px 0;
     font-weight: 700;
     box-shadow: inset 0px 2px 5px 0px lightgrey;
     
-     > i {
+     > i{
         margin-right: 15px;
     }
 }
 
 // Navigation
 
-.navigation {
+.navigation{
     height: 270px;
     background-color: $background-color;
     text-align: center;
@@ -43,18 +43,18 @@
 
 // Fonctionnement
 
-.process {
+.process{
     display: flex;
     flex-direction: column;
     height: 350px;
     padding: 30px 5%;
     margin-bottom: 15%;
 
-    &__title {
+    &__title{
         margin: 9% 0;
     }
 
-    &__list {
+    &__list{
         height: 250px;
         width: 350px;
         display: flex;
@@ -63,7 +63,7 @@
         padding: 0 15px;
         align-self: center;
 
-        > li {
+        > li{
             height: 66px;
             display: flex;
             align-items: center;
@@ -73,7 +73,7 @@
             counter-increment: li;
             font-weight: bold;
 
-            &::before {
+            &::before{
                 content: counter(li); 
                 color: white;
                 border-radius: 100%;
@@ -87,11 +87,15 @@
                 padding: 4px 1px;
             }
 
-            &:hover {
+            &:hover{
                 background-color: #F5EDFF;
             }
 
-            > i {
+            &:hover :nth-child(1){
+                color: $primary-color;
+            }
+
+            > i{
                 margin-right: 5%;
                 color: grey;
             }
@@ -101,7 +105,7 @@
 
 // Section restaurants
 
-#restaurants {
+#restaurants{
     height: 1200px;
     display: flex;
     flex-direction: column;
@@ -110,7 +114,7 @@
 }
 
 .container{
-    height: 90%;
+    height: 95%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -155,8 +159,35 @@
     &__localization{
         margin: 5px 0;
     }
-    &__fav{
-        position: relative;
-        font-size: 25px;
+    &:hover{
+        transition-duration: 0.5s; 
+        @include box-shadow(2px, 2px, 7px, $secondary-color);
+    }
+}
+
+// Footer
+
+footer{
+    height: 200px;
+    background-color: #353535;
+    padding: 30px 5%;
+    gap: 10px;
+
+    & *{
+        color: white;
+    }
+
+    & h3{
+        font-family: 'Shrikhand';
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    & ul{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }

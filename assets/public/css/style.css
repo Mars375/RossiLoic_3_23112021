@@ -71,6 +71,33 @@ img {
   margin: 20px 0;
 }
 
+.restaurantTab__fav {
+  position: relative;
+}
+.restaurantTab__fav:hover .far.fa-heart {
+  transform: scale(0);
+}
+.restaurantTab__fav:hover .fas.fa-heart {
+  transform: scale(1);
+}
+.restaurantTab__fav > .fa-heart {
+  font-size: 25px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  transition-duration: 500ms;
+}
+.restaurantTab__fav > .far.fa-heart {
+  position: absolute;
+}
+.restaurantTab__fav > .fas.fa-heart {
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(0);
+}
+
 .mainTitle {
   height: 63px;
   padding: 20px 0px 10px 0px;
@@ -146,6 +173,9 @@ img {
 .process__list > li:hover {
   background-color: #F5EDFF;
 }
+.process__list > li:hover :nth-child(1) {
+  color: #9356DC;
+}
 .process__list > li > i {
   margin-right: 5%;
   color: grey;
@@ -160,7 +190,7 @@ img {
 }
 
 .container {
-  height: 90%;
+  height: 95%;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -205,35 +235,31 @@ img {
 .restaurantTab__localization {
   margin: 5px 0;
 }
-.restaurantTab__fav {
-  position: relative;
-  font-size: 25px;
+.restaurantTab:hover {
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 7px #FF79DA;
 }
 
-.fa-heart {
-  width: 30px;
-  height: 30px;
+footer {
+  height: 200px;
+  background-color: #353535;
+  padding: 30px 5%;
+  gap: 10px;
+}
+footer * {
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+footer ul {
+  height: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-property: transform;
-  transition-duration: 500ms;
-  overflow: hidden;
-}
-
-.far.fa-heart {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: inherit;
-}
-
-.fa.fa-heart {
-  background: linear-gradient(to top right, #ED74DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transform: scale(0);
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

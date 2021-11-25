@@ -1,7 +1,7 @@
-@mixin gradient-color {
+@mixin gradient-color{
     background: linear-gradient(to left top, $primary-color, $secondary-color);
 }
 
-@mixin box-shadow ($offset-x: 1px, $offset-y: 1px, $blur: 5px, $color: grey) {
+@mixin box-shadow ($offset-x: 1px, $offset-y: 1px, $blur: 5px, $color: grey){
     box-shadow: $offset-x $offset-y $blur $color;
 }
