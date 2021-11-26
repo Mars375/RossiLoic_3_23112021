@@ -1,0 +1,58 @@
+@import "./utils/variables", "./utils/mixins", "./utils/animations"; 
+@import "./base/typography", "./base/reset";
+@import "./components/button", "./components/fav.scss", "./components/tag_new.scss"; // "./components/_check_icons";
+
+// Header
+
+.menuTitle{
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    & a{
+        position: absolute;
+        left: 20px;    
+
+        & i{
+            font-size: 20px;
+        }  
+    }
+}
+
+// Main
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    &> img{
+        height: 225px;
+    }
+}
+
+.menu{
+    margin-top: -40px;
+    padding: 30px 5%;
+    background-color: $background-color;
+    border-radius: 50px 50px 0 0;
+
+    &__name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }       
+}
+
+.starters__title::after{
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary-color;
+    animation: display-underline 2s;
+    animation-fill-mode: both;
+}
+

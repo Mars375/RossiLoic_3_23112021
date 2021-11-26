@@ -8,6 +8,8 @@
 img{
     max-width: 100%;
     padding: 0;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 
@@ -23,10 +25,4 @@ a{
 ol{
     list-style: none; 
     counter-reset: li;
-}
-
-img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
 }

@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./assets/sass/main.scss:./assets/public/css/style.css",
-    "prefix": "postcss ./assets/public/css/style.css --use autoprefixer -d ./assets/public/css/prefixed/"
+    "prefix": "postcss ./assets/public/css/style.css --use autoprefixer -d ./assets/public/css/prefixed/",
+    "menu": "sass --watch ./assets/sass/menu.scss:./assets/public/css/menu.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^8.4.1"
+  }
 }

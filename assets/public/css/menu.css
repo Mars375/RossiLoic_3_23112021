@@ -1,0 +1,166 @@
+@keyframes display-underline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes display-dishes {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 20px;
+  }
+}
+.starters div {
+  animation-delay: 500ms;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.button {
+  width: 60%;
+  padding: 15px 0;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  box-shadow: 1px 1px 5px grey;
+}
+.button:hover {
+  filter: brightness(110%);
+  box-shadow: 5px 5px 10px grey;
+}
+
+.restaurantTab__fav {
+  position: relative;
+}
+.restaurantTab__fav:hover .far.fa-heart {
+  transform: scale(0);
+}
+.restaurantTab__fav:hover .fas.fa-heart {
+  transform: scale(1);
+}
+.restaurantTab__fav > .fa-heart {
+  font-size: 25px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  transition-duration: 500ms;
+}
+.restaurantTab__fav > .far.fa-heart {
+  position: absolute;
+}
+.restaurantTab__fav > .fas.fa-heart {
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(0);
+}
+
+.tag_new {
+  position: absolute;
+  right: 25px;
+  height: 30px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #078C6B;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.menuTitle {
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuTitle a {
+  position: absolute;
+  left: 20px;
+}
+.menuTitle a i {
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main > img {
+  height: 225px;
+}
+
+.menu {
+  margin-top: -40px;
+  padding: 30px 5%;
+  background-color: #F6F6F6;
+  border-radius: 50px 50px 0 0;
+}
+.menu__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starters__title::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  animation: display-underline 2s;
+  animation-fill-mode: both;
+}
+
+/*# sourceMappingURL=menu.css.map */

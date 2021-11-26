@@ -1,0 +1,26 @@
+// Animation pour le soulignage des intitulés "entrées, plats, desserts"
+@keyframes display-underline{
+    0%{
+        transform: scaleX(0);
+    }
+
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes display-dishes{
+    from{
+      opacity: 0;
+      margin-top: 30px;
+    }
+
+    to{
+      opacity: 1;
+      margin-top: 20px;
+    }
+}
+
+.starters div{
+    animation-delay: 500ms;
+}
