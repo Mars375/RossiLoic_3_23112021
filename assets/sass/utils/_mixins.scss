@@ -1,11 +1,14 @@
+// Dégradé commençant en bas à droite et allant jusqu'au coin supérieur gauche
 @mixin gradient-color{
     background: linear-gradient(to left top, $primary-color, $secondary-color);
 }
 
+// Ajout des ombres en fonction des paramètres envoyé
 @mixin box-shadow ($offset-x: 1px, $offset-y: 1px, $blur: 5px, $color: grey){
     box-shadow: $offset-x $offset-y $blur $color;
 }
 
+// Création du soulignages des éléments "Entrées, Plats, Desserts" sur les menus
 @mixin underline{
     content: "";
     display: block;

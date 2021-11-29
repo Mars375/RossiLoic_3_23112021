@@ -32,6 +32,7 @@ main{
     }
 }
 
+// Image en arrière plan et début du menu
 .menu{
     margin-top: -40px;
     padding: 30px 5%;
@@ -48,6 +49,7 @@ main{
     }       
 }
 
+// Ajout du soulignage des titres de section 
 .starters__title, .main_course__title, .desserts__title{
     margin-top: 10px;
 
@@ -56,6 +58,7 @@ main{
     }
 }
 
+// Etiquettes de chaque menu
 .dishes{
     width: 100%;
     height: 65px;
@@ -99,6 +102,7 @@ main{
         }
     }
 
+    // Apparition du check lorsque la souris passe dessus
     &:hover :nth-child(2){
         margin-right: 0;
     }
@@ -118,6 +122,8 @@ main{
     transition-duration: 500ms;
 }
 
+
+// Bouton commander
 .menu_button{
     align-self: center;
     text-align: center;
