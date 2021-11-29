@@ -1,6 +1,8 @@
-@import "./utils/variables", "./utils/mixins", "./utils/keyframes"; 
+// Import
+
 @import "./base/typography", "./base/reset";
-@import "./components/button", "./components/fav.scss", "./components/tag_new.scss", "./components/dishes__check", "./components/loader";
+@import "./utils/variables", "./utils/mixins", "./utils/keyframes" ; 
+@import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./components/dishes__check", "./components/loader";
 
 // Header
 
