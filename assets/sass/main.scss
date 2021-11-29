@@ -1,15 +1,14 @@
 // Import
 
 @import "./base/typography", "./base/reset";
-@import "./utils/variables", "./utils/mixins", "./Utils/animations" ; 
-@import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./Components/_check_icons";
+@import "./utils/variables", "./utils/mixins", "./utils/keyframes" ; 
+@import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./components/dishes__check";
 @import "./menu.scss";
 
 // Header
 
 .mainTitle{    
-    height: 63px;
-    padding: 20px 0px 10px 0px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;

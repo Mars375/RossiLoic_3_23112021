@@ -65,7 +65,7 @@ main{
     display: flex;
     align-items: center;
     @include box-shadow;
-    animation: display-dishes 1000ms ease-out forwards;
+    animation: display-dishes 1200ms ease-out forwards;
 
     &__card{
         width:100%;
@@ -79,6 +79,15 @@ main{
                 font-weight: bold;
                 font-size: 16px;
                 padding-bottom: 3px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            &__name--over{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
 
             &__price{
@@ -97,6 +106,16 @@ main{
     &:hover .fa-check-circle{
         transform: rotate(-360deg);
     }
+}
+
+.dishes:hover .dishes__card__inform > :nth-child(1){
+    width: 220px;
+}
+
+.dishes .dishes__card__inform > :nth-child(1){
+    width: 280px;
+    transition-property: width;
+    transition-duration: 500ms;
 }
 
 .menu_button{
