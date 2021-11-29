@@ -1,6 +1,6 @@
-@import "./utils/variables", "./utils/mixins", "./utils/animations"; 
+@import "./utils/variables", "./utils/mixins", "./utils/keyframes"; 
 @import "./base/typography", "./base/reset";
-@import "./components/button", "./components/fav.scss", "./components/tag_new.scss"; // "./components/_check_icons";
+@import "./components/button", "./components/fav.scss", "./components/tag_new.scss", "./components/dishes__check";
 
 // Header
 
@@ -37,6 +37,9 @@ main{
     padding: 30px 5%;
     background-color: $background-color;
     border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
     &__name{
         display: flex;
@@ -45,14 +48,91 @@ main{
     }       
 }
 
-.starters__title::after{
-    content: "";
-    display: block;
-    margin-top: 5px;
-    width: 40px;
-    height: 3px;
-    background-color: $tertiary-color;
-    animation: display-underline 2s;
-    animation-fill-mode: both;
+.starters__title, .main_course__title, .desserts__title{
+    margin-top: 10px;
+
+    &::after{
+        @include underline;
+    }
 }
 
+.dishes{
+    width: 100%;
+    height: 65px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    @include box-shadow;
+    animation: display-dishes 1000ms ease-out forwards;
+
+    &__card{
+        width:100%;
+        padding: 8px 10px;
+        display: flex;
+        justify-content: space-between;
+        
+        &__inform{
+
+            &__name--name{
+                font-weight: bold;
+                font-size: 16px;
+                padding-bottom: 3px;
+            }
+
+            &__price{
+                display: flex;
+                align-items: flex-end;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &:hover :nth-child(2){
+        margin-right: 0;
+    }
+
+    &:hover .fa-check-circle{
+        transform: rotate(-360deg);
+    }
+}
+
+.menu_button{
+    align-self: center;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+// Footer
+
+footer{
+    height: 200px;
+    background-color: #353535;
+    padding: 30px 5%;
+    gap: 10px;
+
+    & *{
+        color: white;
+    }
+
+    & h3{
+        font-family: 'Shrikhand';
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    & ul{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > li i {
+            width: 25px;
+        }
+    }
+}

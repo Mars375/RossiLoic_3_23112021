@@ -5,3 +5,14 @@
 @mixin box-shadow ($offset-x: 1px, $offset-y: 1px, $blur: 5px, $color: grey){
     box-shadow: $offset-x $offset-y $blur $color;
 }
+
+@mixin underline{
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary-color;
+    animation: display-underline 2s;
+    animation-fill-mode: both;
+}

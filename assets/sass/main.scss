@@ -1,8 +1,8 @@
 // Import
 
 @import "./base/typography", "./base/reset";
-@import "./utils/variables", "./utils/mixins"; // "./Utils/animations" ; 
-@import "./components/button", "./components/tag_new.scss", "./components/fav.scss"; // "./Components/_check_icons";
+@import "./utils/variables", "./utils/mixins", "./Utils/animations" ; 
+@import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./Components/_check_icons";
 @import "./menu.scss";
 
 // Header

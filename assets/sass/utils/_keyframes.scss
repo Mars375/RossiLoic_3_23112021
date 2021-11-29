@@ -1,4 +1,5 @@
 // Animation pour le soulignage des intitulés "entrées, plats, desserts"
+
 @keyframes display-underline{
     0%{
         transform: scaleX(0);
@@ -8,6 +9,8 @@
         transform: scaleX(1);
     }
 }
+
+// Animation pour l'affichage du menu progressif
 
 @keyframes display-dishes{
     from{
@@ -21,6 +24,7 @@
     }
 }
 
-.starters div{
-    animation-delay: 500ms;
-}
+// Delai de l'affichage entre chaque élements du menu
+
+
+// Animation icone selection d'un plat
