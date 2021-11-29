@@ -24,4 +24,37 @@
     }
 }
 
-// Animation icone selection d'un plat
+//  Rotation du Loader
+
+@keyframes loader{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//  Visibilité du Loader
+
+@keyframes visibility{
+  0%{
+    visibility: visible;
+  }
+
+  100%{
+    visibility: hidden;
+  }
+}
+
+// Apparition de la page après le loader
+
+@keyframes html{
+  0%{
+    overflow: hidden;
+  }
+
+  100%{
+    overflow: visible;
+  }
+}
