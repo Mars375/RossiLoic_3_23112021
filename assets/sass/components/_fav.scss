@@ -4,6 +4,7 @@
 
     &:hover .far.fa-heart {
         transform: scale(0);
+        transition-delay: 500ms;
     }
 
     &:hover .fas.fa-heart{
@@ -15,7 +16,7 @@
         width: 30px;
         display: flex;
         justify-content: center;
-        transition-duration: 500ms;
+        transition-duration: 700ms;
     }
 
     > .far.fa-heart{
@@ -28,5 +29,6 @@
         background-clip: text;
         color: transparent;
         transform: scale(0);
+        font-size: 27px;
       }
 }
