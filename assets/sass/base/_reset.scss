@@ -1,11 +1,15 @@
 // Reset des paramètres navigateur
+
+html{
+    animation: html 2.8s forwards;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 14px;
     scroll-behavior: smooth;
-    animation: html 2.8s forwards;
 }
 
 img{

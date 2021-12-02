@@ -4,6 +4,7 @@
 @import "./utils/variables", "./utils/mixins", "./utils/keyframes" ; 
 @import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./components/dishes__check", "./components/loader";
 
+
 // Header
 
 .menuTitle{
@@ -21,6 +22,12 @@
             font-size: 20px;
         }  
     }
+}
+
+// Titre du Menu
+
+h2{
+    font-family: 'Shrikhand', sans-serif;
 }
 
 // Main
@@ -73,26 +80,29 @@ main{
     animation: display-dishes 1200ms ease-out forwards;
 
     &__card{
-        width:100%;
+        width: 100%;
         padding: 8px 10px;
         display: flex;
         justify-content: space-between;
         
         &__inform{
+            
+            &__name{
 
-            &__name--name{
-                font-weight: bold;
-                font-size: 16px;
-                padding-bottom: 3px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-            }
+                &--name{
+                    font-weight: bold;
+                    font-size: 16px;
+                    padding-bottom: 3px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
 
-            &__name--over{
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
+                &--over{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
             }
 
             &__price{

@@ -1,0 +1,48 @@
+@import "../utils/variables", "../utils/mixins";
+
+@media screen and (min-width: 768px){
+
+    h2{
+        text-align: center;
+    }
+
+    #restaurants{
+        height: 700px;
+    }
+
+    .process{
+        background-color: white;
+        margin: 0;
+        height: 400px;
+
+        &__title{
+        margin: 15px;
+        }
+
+        &__list{
+            gap: 30px;
+
+            & li{
+                justify-content: center;
+            }
+        }
+    }
+
+    .restaurantTab{
+        height: 245px;
+        width: 330px;
+    }
+
+
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-around;
+    }
+
+    footer *{
+        align-items: center;
+        text-align: center;
+    }
+}

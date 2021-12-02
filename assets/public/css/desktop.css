@@ -1,0 +1,27 @@
+@media screen and (min-width: 992px) {
+  html {
+    background-color: #353535;
+  }
+
+  body {
+    margin: 0 15%;
+  }
+
+  header i {
+    color: white;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  main {
+    box-shadow: 0 0 8px white;
+  }
+
+  #restaurants {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=desktop.css.map */
