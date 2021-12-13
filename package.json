@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/sass/main.scss:./assets/public/css/style.css",
+    "sass": "sass --watch ./assets/sass/style.scss:./assets/public/css/style.css",
     "prefix": "postcss ./assets/public/css/style.css --use autoprefixer -d ./assets/public/css/prefixed/",
     "menu": "sass --watch ./assets/sass/menu.scss:./assets/public/css/menu.css",
     "tablette": "sass --watch ./assets/sass/responsive/tablette.scss:./assets/public/css/tablette.css",
-    "desktop": "sass --watch ./assets/sass/responsive/desktop.scss:./assets/public/css/desktop.css",
-    "menu-tablette": "sass --watch ./assets/sass/responsive/menu-tablette.scss:./assets/public/css/menu-tablette.css"
+    "desktop": "sass --watch ./assets/sass/responsive/desktop.scss:./assets/public/css/desktop.css"
   },
   "author": "",
   "license": "ISC",
