@@ -6,3 +6,22 @@
     justify-content: center;
     align-items: center;
 }
+
+// Header Menu
+
+.menuTitle{
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    & a{
+        position: absolute;
+        left: 20px;    
+
+        & i{
+            font-size: 20px;
+        }  
+    }
+}

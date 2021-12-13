@@ -202,6 +202,38 @@ ol {
   animation-delay: -0.15s;
 }
 
+footer {
+  height: 200px;
+  background-color: #353535;
+  padding: 30px 5%;
+  gap: 10px;
+}
+footer * {
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 3%;
+}
+footer ul {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer ul > li i {
+  width: 25px;
+}
+
+.mainTitle {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menuTitle {
   height: 70px;
   position: relative;
@@ -316,31 +348,6 @@ main > img {
   text-align: center;
   width: 40%;
   margin-bottom: 40px;
-}
-
-footer {
-  height: 200px;
-  background-color: #353535;
-  padding: 30px 5%;
-  gap: 10px;
-}
-footer * {
-  color: white;
-}
-footer h3 {
-  font-family: "Shrikhand";
-  font-weight: normal;
-  font-size: 15px;
-  margin-bottom: 3%;
-}
-footer ul {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-footer ul > li i {
-  width: 25px;
 }
 
 /*# sourceMappingURL=menu.css.map */

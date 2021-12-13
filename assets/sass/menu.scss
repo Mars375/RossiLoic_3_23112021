@@ -3,25 +3,7 @@
 @import "./base/typography", "./base/reset";
 @import "./utils/variables", "./utils/mixins", "./utils/keyframes" ; 
 @import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./components/dishes__check", "./components/loader";
-
-// Header
-
-.menuTitle{
-    height: 70px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-
-    & a{
-        position: absolute;
-        left: 20px;    
-
-        & i{
-            font-size: 20px;
-        }  
-    }
-}
+@import "./layout/footer", "./layout/header";
 
 // Main
 
@@ -139,35 +121,4 @@ main{
     text-align: center;
     width: 40%;
     margin-bottom: 40px;
-}
-
-// Footer
-
-footer{
-    height: 200px;
-    background-color: #353535;
-    padding: 30px 5%;
-    gap: 10px;
-
-    & *{
-        color: white;
-    }
-
-    & h3{
-        font-family: 'Shrikhand';
-        font-weight: normal;
-        font-size: 15px;
-        margin-bottom: 3%;
-    }
-
-    & ul{
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        > li i {
-            width: 25px;
-        }
-    }
 }
