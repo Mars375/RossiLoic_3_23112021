@@ -4,7 +4,6 @@
 @import "./utils/variables", "./utils/mixins", "./utils/keyframes" ; 
 @import "./components/button", "./components/tag_new.scss", "./components/fav.scss", "./components/dishes__check", "./components/loader";
 
-
 // Header
 
 .menuTitle{
@@ -22,12 +21,6 @@
             font-size: 20px;
         }  
     }
-}
-
-// Titre du Menu
-
-h2{
-    font-family: 'Shrikhand', sans-serif;
 }
 
 // Main
@@ -55,6 +48,11 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        & > h2{
+            font-family: 'Shrikhand', sans-serif;
+            font-size: 28px;
+        }
     }       
 }
 

@@ -1,0 +1,30 @@
+// Footer
+
+footer{
+    height: 200px;
+    background-color: #353535;
+    padding: 30px 5%;
+    gap: 10px;
+
+    & *{
+        color: white;
+    }
+
+    & h3{
+        font-family: 'Shrikhand';
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 3%;
+    }
+
+    & ul{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > li i {
+            width: 25px;
+        }
+    }
+}

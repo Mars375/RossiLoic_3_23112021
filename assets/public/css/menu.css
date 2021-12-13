@@ -9,7 +9,8 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 html {
@@ -216,10 +217,6 @@ ol {
   font-size: 20px;
 }
 
-h2 {
-  font-family: "Shrikhand", sans-serif;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -241,6 +238,10 @@ main > img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.menu__name > h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
 }
 
 .starters__title, .main_course__title, .desserts__title {
